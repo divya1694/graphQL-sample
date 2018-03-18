@@ -1,0 +1,30 @@
+{
+  "kind": "Service",
+  "name": "api-gateway",
+  "organization": "com.insuranceinbox",
+  "version": "4.5.69",
+  "hostPort": 80,
+  "dockerPort": 3000,
+  "replicas": 1,
+  "dockerRegistry": "asia.gcr.io/inbox-gcr/projects",
+  "resources": {
+    "limits": {
+      "cpu": 1,
+      "memory": "2Gi"
+    },
+    "requests": {
+      "cpu": 0.5,
+      "memory": "1Gi"
+    }
+  },
+  "config": {
+    "resource": ""
+  },
+  "environments": [
+  ],
+  "restartPolicy": "Always",
+  "type": "Background",
+  "orcVer": 1,
+  "volumes": [
+  ]
+}
